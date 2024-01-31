@@ -65,9 +65,7 @@ func TestAddGetDelete(t *testing.T) {
 	require.NoError(t, err)
 	_, err = store.Get(parcel.Number)
 	require.Equal(t, sql.ErrNoRows, err)
-	// p1, err := store.Get(id)
-	// require.Error(t, err)
-	// require.Empty(t, p1)
+
 }
 
 // TestSetAddress проверяет обновление адреса
